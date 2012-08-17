@@ -1,12 +1,12 @@
 class UrlMappings {
 
 	static mappings = {
-		"/$controller/$action?/$id?"{
-			constraints {
-				// apply constraints here
-			}
+		name tamperingResult: "/$section/parameterTampering/tamperingResults" {
+			controller = 'parameterTampering'
+			action = 'tamperingResults'
 		}
-
+		"/$section/$controller/$action?/$id?"()
+		
 		"/"(view:"/index")
 		"500"(view:'/error')
 	}
