@@ -1,12 +1,12 @@
-import hdiv.grails.showcase.Pedido;
+import hdiv.grails.showcase.Order;
 class BootStrap {
 
 	def init = { servletContext ->
-		new Pedido(pedidoId:"0",username:"j2ee",shipCity:"Palo Alto",cardType:"Visa").save(failOnError:true)
-		new Pedido(pedidoId:"1",username:"j2ee",shipCity:"Palo Alto",cardType:"Visa").save(failOnError:true)
-		new Pedido(pedidoId:"2",username:"ACID",shipCity:"California",cardType:"Visa").save(failOnError:true)
+		new Order(orderId:"0",username:"j2ee",shipCity:"Palo Alto",cardType:"Visa").save(failOnError:true)
+		new Order(orderId:"1",username:"j2ee",shipCity:"Palo Alto",cardType:"Visa").save(failOnError:true)
+		new Order(orderId:"2",username:"ACID",shipCity:"California",cardType:"Visa").save(failOnError:true)
 	}
 	def destroy = {
-		Pedido.executeUpdate('delete from Pedido')
+		Order.executeUpdate('delete from Order')
 	}
 }

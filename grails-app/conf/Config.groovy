@@ -1,3 +1,6 @@
+import org.codehaus.groovy.grails.validation.ConstrainedProperty;
+import org.hdiv.web.validator.GrailsEditableParameterValidatorConstraint;
+
 // locations to search for config files that get merged into the main config;
 // config files can be ConfigSlurper scripts, Java properties files, or classes
 // in the classpath in ConfigSlurper format
@@ -88,4 +91,11 @@ log4j = {
            'org.springframework',
            'org.hibernate',
            'net.sf.ehcache.hibernate'
+}
+
+// Register HDIV Editable Validation constraint
+ConstrainedProperty.registerNewConstraint GrailsEditableParameterValidatorConstraint.NAME, GrailsEditableParameterValidatorConstraint.class
+// Configure the constraint for add the models
+grails.gorm.default.constraints = {
+	'*'(editableValidation: true)
 }

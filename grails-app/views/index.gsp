@@ -17,7 +17,6 @@
 	This section is a demonstration of common web application flaws. These exercises show how easily can penetration techniques be applied.
 </p>
 
-
 <h2>
 	<g:link controller="attacks" action="index" base="secure">Vulnerable Example Section resolved by HDIV</g:link>
 </h2>

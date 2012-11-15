@@ -12,7 +12,7 @@ class ParameterTamperingController {
 	}
 	def tamperingResults() {
 		def theUsername = params['username'];
-		def pedidos = Pedido.findAll {username == theUsername};
-		return [pedidos:pedidos]
+		def orders = Order.findAll {username == theUsername};
+		return [orders:orders]
 	}
 }

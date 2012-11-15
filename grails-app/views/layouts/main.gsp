@@ -18,6 +18,6 @@
 		<g:layoutBody/>
 		
 		<r:layoutResources />
-		<p class="footer">&copy; 2005-2012 hdiv.org</p>
+		<p class="footer">&copy; 2012 hdiv.org</p>
 	</body>
 </html>

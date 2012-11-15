@@ -10,7 +10,6 @@
 	<img src="${createLinkTo(dir:'images',file:'back-icon.png')}" alt="Return to vulnerable section" class="back" />
 </g:link>
 <h1>How to Exploit Link Parameters</h1>
-<hr noshade="noshade"/>
 
 	<p><b>General Goal(s):</b></p>
 	<p>The user will be able to exploit a link parameter to obtain all users' orders.</p>

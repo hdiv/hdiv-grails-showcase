@@ -41,9 +41,9 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
 
         // runtime 'mysql:mysql-connector-java:5.1.20'
-		runtime "org.hdiv:hdiv-core:2.1.3"
-		runtime "org.hdiv:hdiv-config:2.1.3"
-		runtime "org.hdiv:hdiv-spring-mvc:2.1.3"
+		runtime "org.hdiv:hdiv-core:2.1.4-SNAPSHOT"
+		runtime "org.hdiv:hdiv-config:2.1.4-SNAPSHOT"
+		runtime "org.hdiv:hdiv-spring-mvc:2.1.4-SNAPSHOT"
     }
 
     plugins {

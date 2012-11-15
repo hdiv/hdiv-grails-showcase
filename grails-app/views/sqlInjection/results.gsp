@@ -1,15 +1,16 @@
 <!doctype html>
 <html>
-	<head>
-		<meta name="layout" content="main"/>
-		<title>Parameter Tampering Example</title>
-		
+<head>
+	<meta name="layout" content="main"/>
+	<title>Injection Flaws Example</title>
 	</head>
-	<body>
-<g:link uri="/${request.forwardURI.contains('secure')?'secure':'attacks'}/parameterTampering/selectTampering">
-	<img src="${createLinkTo(dir:'images',file:'back-icon.png')}" alt="Return to vulnerable section" class="back" />
-</g:link>
-<h1>How to Exploit Form Fields</h1>
+<body>
+
+	<g:link uri="/${request.forwardURI.contains('secure')?'secure':'attacks'}/sqlInjection/edit">
+		<img src="${createLinkTo(dir:'images',file:'back-icon.png')}" alt="Return to vulnerable section" class="back" />
+	</g:link>
+	
+	<h1>How to ExploitInjection Flaws</h1>
 
 	<h2 class="subtitle">"My" Orders</h2>
 	<table>
