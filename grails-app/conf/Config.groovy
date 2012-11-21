@@ -91,6 +91,8 @@ log4j = {
            'org.springframework',
            'org.hibernate',
            'net.sf.ehcache.hibernate'
+		   
+	info   'org.hdiv.logs'
 }
 
 // Register HDIV Editable Validation constraint
