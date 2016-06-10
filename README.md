@@ -1,4 +1,4 @@
-Http Data Integrity Validator
-=============================
+Hdiv: Application Self-Protection
+=================================
 Sample application showing the integration between Grails and Hdiv. 
 This application is a development version and only runs with last development version of grails-core. (https://github.com/grails/grails-core) 
